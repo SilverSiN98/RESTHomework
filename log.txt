@@ -1,0 +1,80 @@
+-----------------------------------------------------
+Time: 2019-11-11 11:29:09
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries
+-----------------------------------------------------
+Time: 2019-11-11 11:29:13
+Query type: DELETE
+IP-address: ::1
+URL: https://localhost:44391/api/queries/13
+-----------------------------------------------------
+Time: 2019-11-11 11:29:58
+Query type: DELETE
+IP-address: ::1
+URL: https://localhost:44391/api/queries/9
+-----------------------------------------------------
+Time: 2019-11-11 11:30:01
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries/10
+-----------------------------------------------------
+Time: 2019-11-11 11:33:48
+Query type: DELETE
+IP-address: ::1
+URL: https://localhost:44391/api/queries/10
+-----------------------------------------------------
+Time: 2019-11-11 11:34:13
+Query type: DELETE
+IP-address: ::1
+URL: https://localhost:44391/api/queries/14
+-----------------------------------------------------
+Time: 2019-11-11 11:34:51
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries/17
+-----------------------------------------------------
+Time: 2019-11-11 11:39:27
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries
+-----------------------------------------------------
+Time: 2019-11-11 11:39:38
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries
+-----------------------------------------------------
+Time: 2019-11-11 11:40:17
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries/17
+-----------------------------------------------------
+Time: 2019-11-11 11:46:57
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries
+-----------------------------------------------------
+Time: 2019-11-11 11:47:03
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries
+-----------------------------------------------------
+Time: 2019-11-11 11:47:12
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries/17
+-----------------------------------------------------
+Time: 2019-11-11 11:47:24
+Query type: PUT
+IP-address: ::1
+URL: https://localhost:44391/api/queries
+-----------------------------------------------------
+Time: 2019-11-11 12:01:16
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries
+-----------------------------------------------------
+Time: 2019-11-11 12:03:27
+Query type: GET
+IP-address: ::1
+URL: https://localhost:44391/api/queries
