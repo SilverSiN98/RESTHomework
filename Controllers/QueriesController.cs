@@ -20,24 +20,6 @@ namespace RESTHomework.Controllers
         {
             _accessor = accessor;
             _db = context;
-            if(!_db.Genres.Any())
-            {
-                _db.Genres.Add(new Genre { Name = "Detective" });   // ID = 1
-                _db.Genres.Add(new Genre { Name = "Fantastic" });   // ID = 2
-                _db.Genres.Add(new Genre { Name = "Fantasy" });     // ID = 3
-                _db.Genres.Add(new Genre { Name = "Poetry" });      // ID = 4
-                _db.Genres.Add(new Genre { Name = "Historical" });  // ID = 5
-                _db.Genres.Add(new Genre { Name = "Horror" });      // ID = 6
-                _db.SaveChanges();
-            }
-
-            // if database doesn't consists any books, add two new books to database
-            if (!_db.Books.Any())
-            {
-                _db.Books.Add(new Book { Title = "Игра престолов", Author = "Джордж Мартин", GenreId = 3, Year = 2019, Publisher = "ACT" });
-                _db.Books.Add(new Book { Title = "Чужак", Author = "Стивен Кинг", GenreId = 1, Year = 2019, Publisher = "Neoclassic" });
-                _db.SaveChanges();
-            }
         }
 
         // get book by id

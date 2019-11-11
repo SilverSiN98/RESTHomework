@@ -9,11 +9,13 @@
 </head>
 <body>
     <div class="panel-body">
-        <h2>Список жанров</h2>
-        <ul></ul>
+        <div class="text-center">
+            <h2>Список жанров</h2>
+            <ul class="list-inline"></ul>
+        </div>
     </div>
     <div class="panel-body">
-        <h2 id="title">Список книг</h2>
+        <h2 class="text-center">Форма добавления/редактирования книг</h2>
         <form name="bookForm">
             <input type="hidden" name="id" value="0" />
             <input type="hidden" name="genreId" value="1" />
@@ -38,6 +40,7 @@
                 <a id="reset" class="btn btn-sm btn-primary">Сбросить</a>
             </div>
         </form>
+        <h2 id="title" class="text-center">Список книг</h2>
         <table class="table table-condensed table-striped table-bordered">
             <thead><tr><th>Id</th><th>Название</th><th>Автор</th><th>Год</th><th>Издатель</th><th></th></tr></thead>
             <tbody>
@@ -56,7 +59,7 @@
                     var rows = "";
                     $.each(genres, function (index, genre) {
                         // добавляем полученные элементы в список
-                        rows += "<li><a class='chooseGenre' data-id='" + genre.id + "'>" + genre.name + "</a></li>";
+                        rows += "<li><a class='chooseGenre text-uppercase' data-id='" + genre.id + "'>" + genre.name + "</a></li>";
                     })
                     $("ul").append(rows);
                 }
@@ -75,8 +78,11 @@
                         // добавляем полученные элементы в таблицу
                         rows += row(book);
                     })
-                    $("table tbody").empty();
-                    $("table tbody").append(rows);
+                    $("table tbody").empty().append(rows);
+                    $("#title").empty().append("Список книг жанра " + $("a[data-id='" + genreId + "']").text());
+                    var form = document.forms["bookForm"];
+                    form.reset();
+                    form.elements["genreId"].value = genreId;
                 }
             });
         }
@@ -176,7 +182,7 @@
             var author = this.elements["author"].value;
             var year = this.elements["year"].value;
             var publisher = this.elements["publisher"].value;
-            var genre = this.elements["genre"].value;
+            var genre = this.elements["genreId"].value;
 
             if (id == 0)
                 CreateBook(title, author, year, publisher, genre);
@@ -203,6 +209,9 @@
 
         // загрузка жанров
         GetGenres();
+
+        // загрузка книг первого жанра в списке (Detective)
+        GetBooks(1);
 
     </script>
 
